@@ -13,7 +13,7 @@ API_SECRET=<YOUR_API_SECRET_CODE>
 PUBLIC_NOTION_API=https://api.notion.com/v1/
 ```
 
-run this project using `npm run dev`.
+add dependencies with `npm i` then run this project using `npm run dev`.
 
 ## 2. How to show it on Notion?
 
@@ -24,9 +24,10 @@ you can simply create a embbed on a webpage straight to your link. But some cons
 
 1. The link should follow this template: `<YOUR_LOCALHOST>/?start=<START_DATE>&finish=<END_DATE>` for example: `http://localhost:5173/?start=2023-08-01&finish=2023-08-30`. Because start and finish will limit the X domain of the chart.
 2. The database can have anything you want, but **should** have:
-   1. A column named `Peso` (that means Weight in Portuguese)
-   2. A column named `Finish`
-   3. A column named `Nome` (that means Name in Portuguese)
+   1. Has the title as `Stories`.
+   2. A column named `Peso` (that means Weight in Portuguese)
+   3. A column named `Finish`
+   4. A column named `Nome` (that means Name in Portuguese)
 
 And then you're set to go!
 

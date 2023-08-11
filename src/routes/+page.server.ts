@@ -92,8 +92,8 @@ export const load = async ({ url }) => {
 	let list: Array<ListType> = response.results.map((r: any) => {
 		return {
 			peso: r.properties.Peso.number,
-			Finish: r.properties.Finish.date ? r.properties.Finish.date.start : null,
-			tag: r.properties.Tags.multi_select[0].name
+			Finish: r.properties.Finish.date ? r.properties.Finish.date.start : null
+			// tag: r.properties.Tags.multi_select[0].name
 		};
 	});
 	let describe = {
